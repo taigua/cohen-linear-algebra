@@ -16,3 +16,9 @@ J version: J902
 [J programming](https://jsoftware.com/)
 
 [Jupyter kernel for J](https://github.com/martin-saurer/jkernel)
+
+
+## References
+[Python and Matlab version](https://github.com/mikexcohen/LinAlgBook)(Cohen's version)
+
+[R version](https://alexander-pastukhov.github.io/cohen-linear-algebra/)
