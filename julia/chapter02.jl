@@ -6,7 +6,6 @@
 # load packages
 using DataFrames
 using Gadfly
-using Random
 
 
 # Section 2.1
@@ -49,7 +48,6 @@ v3 = 4*v1 - 2*v2
 # Code challenges
 # Challenge 1
 v = [1, 2]
-rng = MersenneTwister(1234)
 r = randn(rng, 10)
 
 df = DataFrame(x=zeros(length(r) + 1), y=zeros(length(r) + 1),
