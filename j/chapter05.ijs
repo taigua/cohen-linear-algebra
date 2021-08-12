@@ -19,4 +19,17 @@ D =: diagmat_mt_ 1 2 3 4 5
 R =: randnr_mt_ 3 4
 d =: diag R
 
+NB. Code block 5.7
+A =: randnr_mt_ 3 5
+B =: randnr_mt_ 3 4
+AB =: A ,. B
+
+NB. Code block 5.9
+A =: randnr_mt_ 5 5
+L =: trl_mt_ A
+U =: tru_mt_ A
+
+NB. Code block 5.11
+NB. there is no library to do this in J, I will implement this later
+
 NB. Code challenges
