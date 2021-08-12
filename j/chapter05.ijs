@@ -50,3 +50,5 @@ NB. Challenge 2
 A =: randnr_mt_ 4 4
 Al =: trl_mt_ A
 S =: Al + |: Al
+
+NB. Challenge 3
