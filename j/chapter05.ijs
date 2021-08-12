@@ -32,4 +32,21 @@ U =: tru_mt_ A
 NB. Code block 5.11
 NB. there is no library to do this in J, I will implement this later
 
+NB. Code block 5.13
+l =: 0.01
+I =: e. i. 4
+A =: randnr_mt_ 4 4
+As =: A + l*I
+
+NB. Code block 5.15
+A =: randnr_mt_ 4 4
+tr =: trace_mt_ A
+
 NB. Code challenges
+NB. Challenge 1
+
+
+NB. Challenge 2
+A =: randnr_mt_ 4 4
+Al =: trl_mt_ A
+S =: Al + |: Al

@@ -35,4 +35,37 @@ t = [1, 2, 3, 4]
 T = Toeplitz(t, t)
 H = Hankel(t, t[[end, (1:end-1)...]])
 
+
+# Code block 5.13
+l = .01
+I4 = Matrix(1.0I, 4, 4)
+A = randn(4, 4)
+As = A + l*I
+
+
+# Code block 5.15
+A = randn(4, 4)
+trace = tr(A)
+
+
 # Code challenges
+# Challenge 1
+A = randn(4, 2)
+B = randn(4, 2)
+C = zeros(2, 2)
+for coli in 1:2
+    for colj in 1:2
+        C[coli, colj] = A[:, coli] ⋅ B[:, colj]
+    end
+end
+
+# Challenge 2
+A = randn(4, 4)
+Al = tril(A)
+S = Al + Al'
+
+# Challenge 3
+D = zeros(4, 8)
+for d in 1:min(size(D)...)
+    D[d, d] = d
+end
