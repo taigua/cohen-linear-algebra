@@ -44,6 +44,9 @@ tr =: trace_mt_ A
 
 NB. Code challenges
 NB. Challenge 1
+A =: randnr_mt_ 4 2
+B =: randnr_mt_ 4 2
+C =: (|:A) (+/@:*"1)"1 2 (|:B)
 
 
 NB. Challenge 2
