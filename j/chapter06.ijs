@@ -37,6 +37,10 @@ norms_mt_ A
 
 NB. Code challenges
 NB. Challenge 1
+A =: randnr_mt_ 2 4
+B =: randnr_mt_ 4 3
+C1 =: +/ (|:A) *"0 1 B
+C1 - A mp_mt_ B
 
 
 NB. Challenge 2
