@@ -40,7 +40,7 @@ NB. Challenge 1
 A =: randnr_mt_ 2 4
 B =: randnr_mt_ 4 3
 C1 =: +/ (|:A) *"0 1 B
-C1 - A mp_mt_ B
+C1 - A mp_mt_ B  NB. show equality
 
 
 NB. Challenge 2
@@ -62,4 +62,4 @@ A =: randnr_mt_ m, m
 v =: randnr_mt_ m, 1
 LHS =: norms_mt_ A mp_mt_ v
 RHS =: (norms_mt_ A) * (norms_mt_ v)
-RHS - LHS
+RHS - LHS  NB. should always be positive
