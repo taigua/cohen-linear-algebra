@@ -27,3 +27,11 @@ A = randn(9, 2)
 B = randn(2, 16)
 C = A * B
 print((rank(A), rank(B), rank(C)))
+
+# Challenge 1
+Z = zeros(5, 5)
+N = randn(5, 5)
+ZN = Z + N * eps(Float64) * 1e-307
+rank(Z)  # r=0
+rank(ZN)  # r=5
+norm(ZN)

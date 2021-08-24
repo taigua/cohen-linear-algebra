@@ -3,13 +3,13 @@ NB. Code
 
 NB. load package
 load 'math/mt'
-load 'math/misc/odeint'
-load 'math/misc/svd'
+load 'math/lapack'
+load 'math/lapack/gesvd'
 
 NB. define rank (there is no rank in J, get rank using svd)
 rank =: 3 : 0
-  s =. ((0&{) @: +.)"0 (> 1 { svd y)
-  tol =. >./ 0.0, ((0 { s) * (>./ $ y) * (9!:18 ''))
+  s =. diag > 1 { gesvd_jlapack_ C
+  tol =. (>./ s) * (>./ $ y) * (9!:18 '')
   +/ s > tol
 )
 
@@ -34,3 +34,11 @@ A =: randnr_mt_ 9 2
 B =: randnr_mt_ 2 16
 C =: A mp_mt_ B
 (rank A), (rank B), (rank C)
+
+NB. Challenge 2
+Z =: 5 5 $ 0
+N =: randnr_mt_ 5 5
+ZN =: Z + N * (9!:18 '') * 1e_309
+rank Z
+rank ZN
+norms_mt_ ZN
