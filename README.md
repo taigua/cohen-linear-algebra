@@ -5,7 +5,7 @@ This is Julia-version and J-version of the code for
 ## Julia
 Julia version: 1.6.2
 
-[Julia programming language](https://julialang.org/)
+[Julia programming language](https://julialang.org/) from MIT
 
 [Jupyter kernel for Julia](https://github.com/JuliaLang/IJulia.jl)
 
@@ -13,7 +13,7 @@ Julia version: 1.6.2
 ## J
 J version: J902
 
-[J programming](https://jsoftware.com/)
+[J programming language](https://jsoftware.com/) from Jsoftware
 
 [Jupyter kernel for J](https://github.com/martin-saurer/jkernel)
 
